@@ -62,7 +62,7 @@ export default function DemoVideo() {
               <iframe
                 className="absolute inset-0 w-full h-full"
                 src="https://www.youtube-nocookie.com/embed/r7tSaZNgdLE"
-                title="OsCompanyFinder demo video"
+                title="OsCFinder demo video"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
               />

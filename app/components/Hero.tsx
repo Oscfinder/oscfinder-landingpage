@@ -15,7 +15,7 @@ const COMPANIES = [
 const STATS = [
   { value: "50K+", label: "Verified companies" },
   { value: "3x", label: "Faster prospecting" },
-  { value: "100%", label: "Data accuracy" },
+  { value: "24/7", label: "Business monitoring" },
 ];
 
 export default function Hero() {

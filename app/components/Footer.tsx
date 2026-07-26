@@ -41,7 +41,7 @@ export default function Footer() {
             <div>
               <p className="text-white/60 font-semibold mb-3">Contact</p>
               <ul className="space-y-2">
-                <li><a href="mailto:oscompanyfinder@gmail.com" className="text-white/40 hover:text-white/70 transition-colors">Get in touch</a></li>
+                <li><a href="mailto:oscfinder@gmail.com" className="text-white/40 hover:text-white/70 transition-colors">Get in touch</a></li>
                 <li><a href="#contact-form" className="text-white/40 hover:text-white/70 transition-colors">Book a demo</a></li>
               </ul>
             </div>

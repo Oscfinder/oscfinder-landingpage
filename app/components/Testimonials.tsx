@@ -1,105 +1,56 @@
-import Image from "next/image";
-import { IconStar, IconQuote } from "@tabler/icons-react";
-
-// ─── To swap photos ──────────────────────────────────────────────────────────
-// All photos use the Unsplash CDN — free, no attribution required.
-// To replace: find a photo on unsplash.com, copy the photo ID from the URL
-// e.g. unsplash.com/photos/abc123xyz → use "abc123xyz" as the photo ID
-// Format: https://images.unsplash.com/photo-{ID}?w=200&h=200&fit=crop&crop=face&auto=format
-// ─────────────────────────────────────────────────────────────────────────────
+import { IconStar, IconQuote, IconUser } from "@tabler/icons-react";
 
 const TESTIMONIALS = [
   {
-    name: "Adebayo Okafor",
-    title: "Head of Sales",
-    company: "Zenith Insurance Group",
-    avatar: "AO",
+    name: "Emmanuel Joseph",
+    title: "Founder",
+    company: "Dexcreed Group",
     gradient: "from-[#006285] to-[#0099CC]",
-    // African business man — smiling professional
-    photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face&auto=format",
     stars: 5,
     quote:
-      "We used to spend 3 weeks manually compiling a list of 200 companies. OsCompanyFinder gives us 500 verified leads in under an hour. Our pipeline has never looked healthier.",
-    tag: "Insurance",
-  },
-  {
-    name: "Ngozi Adeyemi",
-    title: "CEO",
-    company: "PropReach Lagos",
-    avatar: "NA",
-    gradient: "from-[#00A86B] to-[#00C48C]",
-    // African professional woman — confident executive
-    photo: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=200&h=200&fit=crop&crop=face&auto=format",
-    stars: 5,
-    quote:
-      "As a real estate firm trying to reach corporate clients, finding decision-maker contacts was our biggest bottleneck. This platform solved it completely. ROI was clear within the first month.",
-    tag: "Real Estate",
+      "Finding the right companies to reach out to used to eat up our week. With OsCFinder we get verified leads in minutes and our team spends that time actually closing deals.",
+    tag: "Business Services",
     featured: true,
   },
   {
-    name: "Chukwuemeka Nwosu",
-    title: "Business Development Manager",
-    company: "SwiftMove Logistics",
-    avatar: "CN",
+    name: "Theresa Onyido Osime",
+    title: "Managing Partner",
+    company: "Tessaaattorneys",
     gradient: "from-[#1A3A5C] to-[#006285]",
-    // African business man — professional portrait
-    photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&crop=face&auto=format",
     stars: 5,
     quote:
-      "The bulk email feature alone is worth it. We sent 800 personalised outreach emails in one afternoon and booked 14 demos that week. Nothing else comes close in Nigeria.",
-    tag: "Logistics",
+      "As a law firm, our growth depends on reaching the right corporate clients. OsCFinder makes it easy to identify and connect with decision-makers we'd never have found on our own.",
+    tag: "Law",
   },
   {
-    name: "Fatima Aliyu",
+    name: "Favour Williams",
     title: "Founder",
-    company: "NorthReach Consulting",
-    avatar: "FA",
-    gradient: "from-[#0099CC] to-[#00C48C]",
-    // Professional woman — business portrait
-    photo: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop&crop=face&auto=format",
+    company: "KXN Botanics",
+    gradient: "from-[#00A86B] to-[#00C48C]",
     stars: 5,
     quote:
-      "I was skeptical at first — I'd tried three other tools that promised Nigerian data and delivered garbage. OsCompanyFinder's contacts are actually verified. That changes everything.",
-    tag: "Consulting",
+      "Selling cosmetics B2B meant constantly hunting for retailers and distributors. OsCFinder gave us a steady list of verified businesses to pitch, and our outreach finally started converting.",
+    tag: "Cosmetics",
   },
 ];
 
-// ─── Avatar: shows photo if provided, otherwise gradient initials ─────────
+// ─── Avatar: real clients, no photos — shown as a plain human icon ─────────
 function Avatar({
-  photo,
-  avatar,
   gradient,
   size,
 }: {
-  photo?: string;
-  avatar: string;
   gradient: string;
   size: "sm" | "lg";
 }) {
   const dim    = size === "lg" ? "w-16 h-16" : "w-12 h-12";
-  const text   = size === "lg" ? "text-xl"   : "text-base";
+  const icon   = size === "lg" ? 30 : 22;
   const radius = size === "lg" ? "rounded-2xl" : "rounded-xl";
-
-  if (photo) {
-    return (
-      <div className={`${dim} ${radius} overflow-hidden flex-shrink-0 shadow-lg`}>
-        <Image
-          src={photo}
-          alt={avatar}
-          width={size === "lg" ? 64 : 48}
-          height={size === "lg" ? 64 : 48}
-          className="w-full h-full object-cover"
-          unoptimized
-        />
-      </div>
-    );
-  }
 
   return (
     <div
-      className={`bg-gradient-to-br ${gradient} ${dim} ${radius} flex items-center justify-center text-white font-black ${text} flex-shrink-0 shadow-lg`}
+      className={`bg-gradient-to-br ${gradient} ${dim} ${radius} flex items-center justify-center text-white flex-shrink-0 shadow-lg`}
     >
-      {avatar}
+      <IconUser size={icon} />
     </div>
   );
 }
@@ -131,7 +82,7 @@ export default function Testimonials() {
             Nigerian businesses are already winning with <span className="text-[#00C48C]">OsC</span>Finder
           </h2>
           <p className="mt-4 text-[#888888] text-base leading-relaxed">
-            From insurance to logistics to real estate — see how sales teams across Nigeria are closing more deals.
+            From law to cosmetics to business services — see how teams across Nigeria are closing more deals.
           </p>
         </div>
 
@@ -143,8 +94,6 @@ export default function Testimonials() {
           />
           <div className="relative z-10 flex flex-col sm:flex-row sm:items-start gap-6">
             <Avatar
-              photo={featuredItem.photo}
-              avatar={featuredItem.avatar}
               gradient={featuredItem.gradient}
               size="lg"
             />
@@ -172,7 +121,7 @@ export default function Testimonials() {
         </div>
 
         {/* Other testimonials */}
-        <div className="grid sm:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 gap-6">
           {others.map((t) => (
             <div
               key={t.name}
@@ -180,8 +129,6 @@ export default function Testimonials() {
             >
               <div className="flex items-start justify-between mb-5">
                 <Avatar
-                  photo={t.photo}
-                  avatar={t.avatar}
                   gradient={t.gradient}
                   size="sm"
                 />

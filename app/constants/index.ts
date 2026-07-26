@@ -1,7 +1,7 @@
 // ── Company identity ──────────────────────────────────────────────────────────
 export const BRAND_NAME      = "OsCFinder";
 export const COMPANY_NAME    = "OsCompanyFinder Technologies";
-export const COMPANY_EMAIL   = "oscompanyfinder@gmail.com";
+export const COMPANY_EMAIL   = "oscfinder@gmail.com";
 export const COMPANY_PHONE   = "+2348139304329";
 export const COMPANY_PHONE_DISPLAY = "+234 813 930 4329";
 export const COMPANY_WHATSAPP = "https://wa.me/2348139304329";
