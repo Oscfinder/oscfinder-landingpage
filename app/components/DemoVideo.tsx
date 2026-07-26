@@ -4,7 +4,6 @@ import {
   IconAddressBook,
   IconMailFast,
   IconFileExport,
-  IconPlayerPlay,
   IconArrowRight,
 } from "@tabler/icons-react";
 
@@ -58,57 +57,27 @@ export default function DemoVideo() {
 
         {/* Video container */}
         <div className="max-w-4xl mx-auto">
-          <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-[#006285]/20"
-            style={{ background: "linear-gradient(135deg, #003d54 0%, #006285 40%, #0099CC 70%, #00A86B 100%)" }}
-          >
-            {/* Decorative grid overlay */}
-            <div className="absolute inset-0 opacity-10"
-              style={{
-                backgroundImage: "linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)",
-                backgroundSize: "40px 40px",
-              }}
-            />
-
-            {/* Glow blobs */}
-            <div className="absolute top-0 left-1/4 w-72 h-72 rounded-full blur-3xl opacity-20"
-              style={{ background: "#00C48C" }} />
-            <div className="absolute bottom-0 right-1/4 w-72 h-72 rounded-full blur-3xl opacity-15"
-              style={{ background: "#0099CC" }} />
-
-            {/* Content */}
-            <div className="relative aspect-video flex flex-col items-center justify-center px-8 gap-6">
-
-              {/* Play button */}
-              <a
-                href="#contact-form"
-                className="group flex flex-col items-center gap-4"
-              >
-                <div className="w-20 h-20 rounded-full bg-white/15 border-2 border-white/50 flex items-center justify-center backdrop-blur-sm group-hover:bg-white/25 group-hover:scale-110 transition-all duration-300 shadow-xl">
-                  <IconPlayerPlay size={30} className="text-white ml-1" />
-                </div>
-                <div className="text-center">
-                  <p className="text-white font-bold text-lg">Book a live demo</p>
-                  <p className="text-white/60 text-sm mt-0.5">We walk you through the full workflow — live</p>
-                </div>
-              </a>
-
-              {/* CTA */}
-              <a
-                href="#contact-form"
-                className="inline-flex items-center gap-2 bg-[#00C48C] hover:bg-[#00A86B] text-white font-bold text-sm px-6 py-3 rounded-xl transition-colors shadow-lg"
-              >
-                Schedule your demo
-                <IconArrowRight size={15} />
-              </a>
+          <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-[#006285]/20">
+            <div className="relative aspect-video bg-black">
+              <iframe
+                className="absolute inset-0 w-full h-full"
+                src="https://www.youtube-nocookie.com/embed/r7tSaZNgdLE"
+                title="OsCompanyFinder demo video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
             </div>
 
             {/* Bottom bar */}
-            <div className="relative border-t border-white/10 px-6 py-3 flex items-center justify-between bg-black/20 backdrop-blur-sm">
+            <div className="relative border-t border-white/10 px-6 py-3 flex items-center justify-between bg-[#0A1628]">
               <p className="text-white/50 text-xs">Free · No commitment · 30 minutes</p>
-              <div className="flex items-center gap-1.5">
-                <span className="w-2 h-2 rounded-full bg-[#00C48C] animate-pulse" />
-                <span className="text-white/50 text-xs">Available for booking</span>
-              </div>
+              <a
+                href="#contact-form"
+                className="inline-flex items-center gap-1.5 text-[#00C48C] hover:text-[#00A86B] font-semibold text-xs transition-colors"
+              >
+                Schedule your demo
+                <IconArrowRight size={13} />
+              </a>
             </div>
           </div>
         </div>
