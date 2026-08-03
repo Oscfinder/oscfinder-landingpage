@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   IconSearch,
   IconBuildingSkyscraper,
@@ -60,17 +61,29 @@ export default function HowItWorks() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header */}
-        <div className="max-w-2xl mx-auto text-center mb-16">
-          <span className="inline-block bg-[#00C48C]/10 border border-[#00C48C]/20 text-[#00C48C] font-semibold text-xs uppercase tracking-widest px-3 py-1.5 rounded-full mb-4">
-            Simple Process
-          </span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-white leading-tight">
-            From zero to verified leads<br className="hidden sm:block" /> in 3 steps
-          </h2>
-          <p className="mt-4 text-white/50 text-base leading-relaxed">
-            No spreadsheets. No manual research. No wasted hours.
-            Just a clean pipeline from search to outreach.
-          </p>
+        <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 items-center mb-16">
+          <div className="text-center lg:text-left">
+            <span className="inline-block bg-[#00C48C]/10 border border-[#00C48C]/20 text-[#00C48C] font-semibold text-xs uppercase tracking-widest px-3 py-1.5 rounded-full mb-4">
+              Simple Process
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-white leading-tight">
+              From zero to verified leads<br className="hidden sm:block" /> in 3 steps
+            </h2>
+            <p className="mt-4 text-white/50 text-base leading-relaxed max-w-xl mx-auto lg:mx-0">
+              No spreadsheets. No manual research. No wasted hours.
+              Just a clean pipeline from search to outreach.
+            </p>
+          </div>
+
+          <div className="relative hidden lg:block rounded-2xl overflow-hidden shadow-lg h-72 border border-white/10">
+            <Image
+              src="/images/conny-schneider-xuTJZ7uD7PI-unsplash.jpg"
+              alt="A connected network of data points, representing the OsCFinder pipeline"
+              fill
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#003d54]/40 via-transparent to-transparent" />
+          </div>
         </div>
 
         {/* Steps */}

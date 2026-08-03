@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { IconStar, IconQuote, IconUser } from "@tabler/icons-react";
 
 const TESTIMONIALS = [
@@ -74,16 +75,28 @@ export default function Testimonials() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header */}
-        <div className="max-w-2xl mx-auto text-center mb-16">
-          <span className="inline-block bg-[#006285]/8 border border-[#006285]/15 text-[#006285] font-semibold text-xs uppercase tracking-widest px-3 py-1.5 rounded-full mb-4">
-            Client Stories
-          </span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#0A1628] leading-tight">
-            Nigerian businesses are already winning with <span className="text-[#00C48C]">OsC</span>Finder
-          </h2>
-          <p className="mt-4 text-[#888888] text-base leading-relaxed">
-            From law to cosmetics to business services — see how teams across Nigeria are closing more deals.
-          </p>
+        <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 items-center mb-16">
+          <div className="text-center lg:text-left">
+            <span className="inline-block bg-[#006285]/8 border border-[#006285]/15 text-[#006285] font-semibold text-xs uppercase tracking-widest px-3 py-1.5 rounded-full mb-4">
+              Client Stories
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#0A1628] leading-tight">
+              Nigerian businesses are already winning with <span className="text-[#00C48C]">OsC</span>Finder
+            </h2>
+            <p className="mt-4 text-[#888888] text-base leading-relaxed max-w-xl mx-auto lg:mx-0">
+              From law to cosmetics to business services — see how teams across Nigeria are closing more deals.
+            </p>
+          </div>
+
+          <div className="relative hidden lg:block rounded-2xl overflow-hidden shadow-lg h-72">
+            <Image
+              src="/images/maximalfocus-VT4rx775FT4-unsplash.jpg"
+              alt="A business owner working from home, closing deals with OsCFinder"
+              fill
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628]/45 via-transparent to-transparent" />
+          </div>
         </div>
 
         {/* Featured testimonial */}

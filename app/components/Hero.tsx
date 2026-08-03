@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   IconRocket,
   IconPlayerPlay,
@@ -20,8 +21,16 @@ const STATS = [
 
 export default function Hero() {
   return (
-    <section className="pt-20 pb-0 bg-gradient-to-br from-[#f0faff] via-white to-[#edfaf5]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <section className="relative pt-20 pb-0 overflow-hidden">
+      {/* Background photo */}
+      <Image
+        src="/images/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg"
+        alt=""
+        fill
+        priority
+        className="object-cover"
+      />
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
           {/* ── Left column ── */}
@@ -41,7 +50,7 @@ export default function Hero() {
               faster than ever
             </h1>
 
-            <p className="text-[#888888] text-base leading-[1.75] mb-8 max-w-[420px]">
+            <p className="inline-block text-[#888888] text-base leading-[1.75] mb-8 max-w-[420px] bg-white/85 backdrop-blur-sm rounded-xl px-4 py-3 shadow-sm">
               <span className="text-[#00C48C]">OsC</span>Finder gives you verified sales leads, decision-maker contacts, and
               automated outreach — all in one platform built for Africa.
             </p>
@@ -65,7 +74,7 @@ export default function Hero() {
             </div>
 
             {/* Stats */}
-            <div className="flex items-center gap-7">
+            <div className="inline-flex items-center gap-7 bg-white/85 backdrop-blur-sm rounded-xl px-5 py-3.5 shadow-sm">
               {STATS.map((stat, i) => (
                 <div key={stat.value} className="flex items-center gap-7">
                   <div>

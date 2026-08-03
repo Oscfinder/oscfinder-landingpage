@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   IconFolderOff,
   IconClock,
@@ -5,7 +6,6 @@ import {
   IconLayoutOff,
   IconCircleOff,
   IconAlertTriangle,
-  IconArrowRight,
 } from "@tabler/icons-react";
 
 const STATS = [
@@ -48,20 +48,31 @@ export default function Problem() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header */}
-        <div className="max-w-2xl mx-auto text-center mb-14">
-          <span className="inline-flex items-center gap-1.5 bg-[#FEF2F2] border border-[#EF4444]/20 text-[#EF4444] font-semibold text-xs uppercase tracking-widest px-3 py-1.5 rounded-full mb-4">
-            <IconAlertTriangle size={12} />
-            The Problem
-          </span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#0A1628] leading-snug">
-            Your team spends more time{" "}
-            <span className="text-[#EF4444]">searching for leads</span>{" "}
-            than closing them
-          </h2>
-          <p className="mt-4 text-[#888888] text-base leading-relaxed">
-            Most B2B sales teams in Nigeria are still running a 2005 pipeline in 2025.
-            Here's what that's actually costing you.
-          </p>
+        <div className="grid lg:grid-cols-[1.3fr_1fr] gap-10 items-center mb-14">
+          <div className="text-center lg:text-left">
+            <span className="inline-flex items-center gap-1.5 bg-[#FEF2F2] border border-[#EF4444]/20 text-[#EF4444] font-semibold text-xs uppercase tracking-widest px-3 py-1.5 rounded-full mb-4">
+              <IconAlertTriangle size={12} />
+              The Problem
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#0A1628] leading-snug">
+              Your team spends more time{" "}
+              <span className="text-[#EF4444]">searching for leads</span>{" "}
+              than closing them
+            </h2>
+            <p className="mt-4 text-[#888888] text-base leading-relaxed max-w-xl mx-auto lg:mx-0">
+              Most B2B sales teams in Nigeria are still running a 2005 pipeline in 2025.
+              Here's what that's actually costing you.
+            </p>
+          </div>
+          <div className="relative hidden lg:block rounded-2xl overflow-hidden shadow-lg h-64">
+            <Image
+              src="/images/marvin-meyer-SYTO3xs06fU-unsplash.jpg"
+              alt="A team buried in laptops, spreadsheets, and manual prospecting"
+              fill
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628]/60 via-transparent to-transparent" />
+          </div>
         </div>
 
         {/* Stats — 3 bold callouts */}
@@ -82,7 +93,7 @@ export default function Problem() {
         </div>
 
         {/* Pain points — 3-col list */}
-        <div className="mb-10">
+        <div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {PAIN_POINTS.map((item, i) => (
               <div
@@ -117,49 +128,6 @@ export default function Problem() {
                 </p>
               </div>
             </div>
-          </div>
-        </div>
-
-        {/* Bottom warning banner */}
-        <div className="relative rounded-2xl overflow-hidden">
-          {/* Background layers */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0A1628] via-[#130d0d] to-[#1a0a0a]" />
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_right,_#EF444415_0%,_transparent_60%)]" />
-          {/* Left accent stripe */}
-          <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-[#EF4444] via-[#F97316] to-[#EF4444]" />
-
-          <div className="relative px-7 py-6 flex flex-col sm:flex-row items-start sm:items-center gap-5">
-
-            {/* Icon with pulse */}
-            <div className="relative flex-shrink-0">
-              <div className="w-14 h-14 rounded-2xl bg-[#EF4444]/12 border border-[#EF4444]/25 flex items-center justify-center">
-                <IconAlertTriangle size={26} className="text-[#EF4444]" />
-              </div>
-              <span className="absolute -top-1 -right-1 flex h-3.5 w-3.5">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#EF4444] opacity-60" />
-                <span className="relative inline-flex rounded-full h-3.5 w-3.5 bg-[#EF4444]" />
-              </span>
-            </div>
-
-            {/* Text */}
-            <div className="flex-1 min-w-0">
-              <p className="text-white font-bold text-base sm:text-lg leading-snug">
-                Every week without a system is another week of lost deals
-              </p>
-              <p className="text-white/45 text-sm mt-1 leading-relaxed">
-                While you manually prospect, competitors using automation are generating{" "}
-                <span className="text-[#F97316] font-semibold">5× more qualified leads</span> every week.
-              </p>
-            </div>
-
-            {/* CTA */}
-            <a
-              href="#features"
-              className="group flex-shrink-0 inline-flex items-center gap-2 bg-gradient-to-r from-[#EF4444] to-[#F97316] hover:from-[#dc2626] hover:to-[#ea580c] text-white text-sm font-bold px-6 py-3 rounded-xl transition-all duration-200 shadow-lg shadow-[#EF4444]/30 whitespace-nowrap"
-            >
-              See the solution
-              <IconArrowRight size={15} className="group-hover:translate-x-0.5 transition-transform duration-200" />
-            </a>
           </div>
         </div>
 

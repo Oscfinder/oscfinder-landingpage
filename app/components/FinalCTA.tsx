@@ -1,7 +1,17 @@
+import Image from "next/image";
+
 export default function FinalCTA() {
   return (
-    <section id="contact" className="py-24 bg-gradient-to-br from-[#006285] via-[#0099CC] to-[#00A86B]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <section id="contact" className="relative py-24 overflow-hidden">
+      <Image
+        src="/images/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
+        alt=""
+        fill
+        className="object-cover"
+      />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#006285]/93 via-[#0099CC]/90 to-[#00A86B]/93" />
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white max-w-3xl mx-auto">
           Ready to grow your business with automated lead generation?
         </h2>
