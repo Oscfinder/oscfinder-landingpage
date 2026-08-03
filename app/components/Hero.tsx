@@ -30,6 +30,7 @@ export default function Hero() {
         priority
         className="object-cover"
       />
+      <div className="absolute inset-0 bg-black/25" />
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
@@ -50,7 +51,7 @@ export default function Hero() {
               faster than ever
             </h1>
 
-            <p className="inline-block text-[#888888] text-base leading-[1.75] mb-8 max-w-[420px] bg-white/85 backdrop-blur-sm rounded-xl px-4 py-3 shadow-sm">
+            <p className="text-white text-base font-semibold leading-[1.75] mb-8 max-w-[420px]">
               <span className="text-[#00C48C]">OsC</span>Finder gives you verified sales leads, decision-maker contacts, and
               automated outreach — all in one platform built for Africa.
             </p>
@@ -74,17 +75,17 @@ export default function Hero() {
             </div>
 
             {/* Stats */}
-            <div className="inline-flex items-center gap-7 bg-white/85 backdrop-blur-sm rounded-xl px-5 py-3.5 shadow-sm">
+            <div className="inline-flex items-center gap-7 px-5 py-3.5">
               {STATS.map((stat, i) => (
                 <div key={stat.value} className="flex items-center gap-7">
                   <div>
-                    <p className="text-[#006285] text-2xl font-bold leading-none mb-0.5">
+                    <p className="text-white text-2xl font-bold leading-none mb-0.5">
                       {stat.value}
                     </p>
-                    <p className="text-[#888888] text-xs">{stat.label}</p>
+                    <p className="text-white/70 text-xs">{stat.label}</p>
                   </div>
                   {i < STATS.length - 1 && (
-                    <div className="w-px h-9 bg-[#E5E7EB]" />
+                    <div className="w-px h-9 bg-white/25" />
                   )}
                 </div>
               ))}
