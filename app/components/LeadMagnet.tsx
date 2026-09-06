@@ -222,7 +222,7 @@ export default function LeadMagnet() {
                   <div className="mt-5 pt-4 border-t border-[#F1F5F9] flex items-center justify-center gap-2">
                     <IconCircleCheck size={14} color="#00A86B" />
                     <span className="text-xs text-[#888888]">
-                      Trusted by 50+ Nigerian businesses
+                      Currently in private beta with select companies
                     </span>
                   </div>
                 </>

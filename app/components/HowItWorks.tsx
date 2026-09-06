@@ -19,11 +19,11 @@ const STEPS = [
     title: "Search by industry & location",
     desc: "Select your target industry and city. OsCFinder's intelligence engine knows exactly where verified Nigerian companies are.",
     bullets: [
-      "Filter by 20+ industries",
+      "Filter by 12 industries",
       "Narrow by state or city",
       "Set company size range",
     ],
-    tag: { icon: <IconMapPin size={13} />, label: "Lagos · 847 companies found" },
+    tag: { icon: <IconMapPin size={13} />, label: "Example: Lagos search results" },
   },
   {
     step: "02",
@@ -37,7 +37,7 @@ const STEPS = [
       "Company size & industry data",
       "Instant export to Excel / CSV",
     ],
-    tag: { icon: <IconSparkles size={13} />, label: "3,200+ contacts enriched" },
+    tag: { icon: <IconSparkles size={13} />, label: "Verified emails & phone numbers" },
   },
   {
     step: "03",
@@ -51,7 +51,7 @@ const STEPS = [
       "Open & click tracking",
       "Follow-up sequences",
     ],
-    tag: { icon: <IconChartBar size={13} />, label: "42% avg. open rate" },
+    tag: { icon: <IconChartBar size={13} />, label: "Real-time open & click tracking" },
   },
 ];
 

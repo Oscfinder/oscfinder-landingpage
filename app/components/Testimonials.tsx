@@ -169,18 +169,10 @@ export default function Testimonials() {
         </div>
 
         {/* Bottom trust bar */}
-        <div className="mt-14 flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-10 py-7 px-8 rounded-2xl bg-gradient-to-r from-[#f0faff] to-[#edfaf5] border border-[#006285]/10">
-          {[
-            { value: "50+",   label: "Companies served"    },
-            { value: "4.9/5", label: "Average rating"      },
-            { value: "98%",   label: "Client retention"    },
-            { value: "3×",    label: "Avg. pipeline growth" },
-          ].map((stat) => (
-            <div key={stat.label} className="text-center">
-              <p className="text-2xl font-black text-[#006285]">{stat.value}</p>
-              <p className="text-[#888888] text-xs mt-0.5 uppercase tracking-wide">{stat.label}</p>
-            </div>
-          ))}
+        <div className="mt-14 flex items-center justify-center py-7 px-8 rounded-2xl bg-gradient-to-r from-[#f0faff] to-[#edfaf5] border border-[#006285]/10">
+          <p className="text-[#1A3A5C] text-sm font-semibold text-center">
+            Currently in private beta with select companies across Nigeria
+          </p>
         </div>
 
       </div>

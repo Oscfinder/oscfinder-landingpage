@@ -51,7 +51,7 @@ const SCREENS = [
           <IconSearch size={11} className="text-[#888]" />
           <span className="text-[10px] text-[#888]">Lagos · Insurance · 50+ employees</span>
         </div>
-        {["Zenith Insurance", "Access Assurance", "AXA Mansard"].map((name, i) => (
+        {["Northbridge Insurance", "Coastal Assurance", "Prime Underwriters"].map((name, i) => (
           <div key={name} className="flex items-center justify-between px-2.5 py-1.5 bg-[#F8FAFC] rounded-lg border border-[#E5E7EB]/60">
             <div className="flex items-center gap-2">
               <div className="w-5 h-5 rounded bg-[#00A86B]/15 flex items-center justify-center">
@@ -79,9 +79,9 @@ const SCREENS = [
           ))}
         </div>
         {[
-          ["MTN Nigeria", "info@mtn.ng", "+234 8xx"],
-          ["Dangote Grp", "sales@dan.ng", "+234 7xx"],
-          ["GTBank PLC", "corp@gtb.ng", "+234 9xx"],
+          ["Acme Industries", "info@acme-industries.ng", "+234 8xx"],
+          ["Sunrise Logistics", "sales@sunriselogistics.ng", "+234 7xx"],
+          ["GreenField Mfg", "corp@greenfieldmfg.ng", "+234 9xx"],
         ].map(([company, email, phone]) => (
           <div key={company} className="grid grid-cols-3 gap-1 py-1 border-b border-[#F8FAFC]">
             <span className="text-[9px] text-[#1A3A5C] font-medium truncate">{company}</span>
@@ -106,11 +106,11 @@ const SCREENS = [
         </div>
         <div className="flex gap-2">
           <div className="flex-1 text-center">
-            <div className="text-[#0099CC] font-black text-sm">42%</div>
+            <div className="text-[#0099CC] font-black text-sm">22%</div>
             <div className="text-[9px] text-[#888]">Open rate</div>
           </div>
           <div className="flex-1 text-center">
-            <div className="text-[#00A86B] font-black text-sm">18%</div>
+            <div className="text-[#00A86B] font-black text-sm">6%</div>
             <div className="text-[9px] text-[#888]">Click rate</div>
           </div>
           <div className="flex-1 text-center">

@@ -8,15 +8,9 @@ import {
 } from "@tabler/icons-react";
 
 const COMPANIES = [
-  { name: "Dangote Group", meta: "Lagos · Manufacturing · 10,000+ employees", color: "#006285" },
-  { name: "Access Bank PLC", meta: "Lagos · Banking · 5,000+ employees", color: "#0099CC" },
-  { name: "MTN Nigeria", meta: "Lagos · Telecoms · 3,000+ employees", color: "#00A86B" },
-];
-
-const STATS = [
-  { value: "50K+", label: "Verified companies" },
-  { value: "3x", label: "Faster prospecting" },
-  { value: "24/7", label: "Business monitoring" },
+  { name: "Acme Industries", meta: "Lagos · Manufacturing · 500+ employees", color: "#006285" },
+  { name: "Sunrise Logistics Ltd", meta: "Lagos · Logistics · 200+ employees", color: "#0099CC" },
+  { name: "GreenField Manufacturing", meta: "Lagos · Manufacturing · 300+ employees", color: "#00A86B" },
 ];
 
 export default function Hero() {
@@ -76,19 +70,15 @@ export default function Hero() {
 
             {/* Stats */}
             <div className="inline-flex items-center gap-7 px-5 py-3.5">
-              {STATS.map((stat, i) => (
-                <div key={stat.value} className="flex items-center gap-7">
-                  <div>
-                    <p className="text-white text-2xl font-bold leading-none mb-0.5">
-                      {stat.value}
-                    </p>
-                    <p className="text-white/70 text-xs">{stat.label}</p>
-                  </div>
-                  {i < STATS.length - 1 && (
-                    <div className="w-px h-9 bg-white/25" />
-                  )}
-                </div>
-              ))}
+              <div>
+                <p className="text-white text-2xl font-bold leading-none mb-0.5">12</p>
+                <p className="text-white/70 text-xs">Industries covered</p>
+              </div>
+              <div className="w-px h-9 bg-white/25" />
+              <div>
+                <p className="text-white text-2xl font-bold leading-none mb-0.5">48hr</p>
+                <p className="text-white/70 text-xs">Setup time</p>
+              </div>
             </div>
           </div>
 

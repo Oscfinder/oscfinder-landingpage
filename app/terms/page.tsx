@@ -315,8 +315,8 @@ export default function TermsPage() {
                 </P>
                 <P>
                   We encourage clients to resolve disputes informally by contacting us at{" "}
-                  <a href="mailto:oscfinder@gmail.com" className="text-[#006285] hover:underline">
-                    oscfinder@gmail.com
+                  <a href="mailto:contact@oscfinder.com" className="text-[#006285] hover:underline">
+                    contact@oscfinder.com
                   </a>{" "}
                   before initiating formal proceedings.
                 </P>
@@ -337,8 +337,8 @@ export default function TermsPage() {
                 <div className="bg-[#F8FAFC] border border-[#E5E7EB] rounded-xl p-5 mt-2">
                   <p className="font-semibold text-[#1A3A5C] mb-2">OsCompanyFinder Technologies</p>
                   <p>Email:{" "}
-                    <a href="mailto:oscfinder@gmail.com" className="text-[#006285] hover:underline">
-                      oscfinder@gmail.com
+                    <a href="mailto:contact@oscfinder.com" className="text-[#006285] hover:underline">
+                      contact@oscfinder.com
                     </a>
                   </p>
                   <p>Website:{" "}

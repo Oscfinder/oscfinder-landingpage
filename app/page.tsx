@@ -1,6 +1,5 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import TrustStrip from "./components/TrustStrip";
 import Problem from "./components/Problem";
 import Features from "./components/Features";
 import HowItWorks from "./components/HowItWorks";
@@ -16,7 +15,6 @@ export default function LandingPage() {
     <main className="bg-white">
       <Navbar />
       <Hero />
-      <TrustStrip />
       <Problem />
       <Features preview />
       <HowItWorks />

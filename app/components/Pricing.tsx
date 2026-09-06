@@ -4,7 +4,7 @@ const STARTER_FEATURES = [
   "Limited Export to Excel",
   "Email support",
 ];
-const GROWTH_FEATURES = [
+const BUSINESS_FEATURES = [
   "Higher lead generation volume",
   "Email outreach automation",
   "Advanced filters",
@@ -105,10 +105,10 @@ export default function Pricing() {
             </div>
           </div>
 
-          {/* Growth */}
+          {/* Business */}
           <div className="border border-[#E5E7EB] rounded-2xl p-8 hover:shadow-md transition-shadow flex flex-col">
             <div>
-              <h3 className="text-lg font-bold text-[#1A3A5C]">Growth</h3>
+              <h3 className="text-lg font-bold text-[#1A3A5C]">Business</h3>
               <p className="text-[#888888] text-sm mt-1 mb-6">For growing sales teams</p>
 
               <div className="mb-1">
@@ -121,7 +121,7 @@ export default function Pricing() {
               </div>
 
               <ul className="space-y-3 mb-8">
-                {GROWTH_FEATURES.map((f) => (
+                {BUSINESS_FEATURES.map((f) => (
                   <li key={f} className="flex items-start gap-2 text-sm text-[#1A3A5C]">
                     <CheckIcon />
                     {f}

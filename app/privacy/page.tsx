@@ -241,8 +241,8 @@ export default function PrivacyPage() {
                 ]} />
                 <P>
                   To exercise any of these rights, please email{" "}
-                  <a href="mailto:oscfinder@gmail.com" className="text-[#006285] hover:underline">
-                    oscfinder@gmail.com
+                  <a href="mailto:contact@oscfinder.com" className="text-[#006285] hover:underline">
+                    contact@oscfinder.com
                   </a>
                   . We will respond within 30 days.
                 </P>
@@ -295,8 +295,8 @@ export default function PrivacyPage() {
                 <div className="bg-[#F8FAFC] border border-[#E5E7EB] rounded-xl p-5 mt-2">
                   <p className="font-semibold text-[#1A3A5C] mb-2">OsCompanyFinder Technologies</p>
                   <p>Email:{" "}
-                    <a href="mailto:oscfinder@gmail.com" className="text-[#006285] hover:underline">
-                      oscfinder@gmail.com
+                    <a href="mailto:contact@oscfinder.com" className="text-[#006285] hover:underline">
+                      contact@oscfinder.com
                     </a>
                   </p>
                   <p className="mt-1 text-xs text-[#888888]">

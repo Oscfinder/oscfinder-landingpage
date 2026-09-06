@@ -8,7 +8,7 @@ const INTERESTS = [
   "Get a Demo",
   "Book a Strategy Call",
   "Starter Plan",
-  "Growth Plan",
+  "Business Plan",
   "Enterprise Plan",
   "General Inquiry",
 ];
@@ -128,11 +128,11 @@ export default function ContactForm() {
             <div className="mt-10 p-5 bg-gradient-to-br from-[#006285] to-[#004a66] rounded-xl">
               <p className="text-white/60 text-xs uppercase tracking-widest mb-3">Direct contact</p>
               <a
-                href="mailto:oscfinder@gmail.com"
+                href="mailto:contact@oscfinder.com"
                 className="flex items-center gap-2 text-white/80 hover:text-white text-sm mb-2 transition-colors"
               >
                 <IconMail size={15} />
-                oscfinder@gmail.com
+                contact@oscfinder.com
               </a>
               <a
                 href="tel:+2348139304329"
