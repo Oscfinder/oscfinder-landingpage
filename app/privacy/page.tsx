@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import { constructMetadata } from "../constants/seoContants";
 
 export const metadata = constructMetadata("privacy");
-//
+/
 const SECTIONS = [
   { id: "overview", label: "Overview" },
   { id: "information", label: "Information We Collect" },
