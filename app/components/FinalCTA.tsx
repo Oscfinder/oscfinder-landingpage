@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { SIGNUP_URL } from "../constants";
 
 export default function FinalCTA() {
   return (
@@ -22,22 +23,16 @@ export default function FinalCTA() {
 
         <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="mailto:contact@oscfinder.com"
+            href={SIGNUP_URL}
             className="inline-flex items-center justify-center gap-2 bg-[#00C48C] hover:bg-[#00A86B] text-white font-semibold px-8 py-4 rounded-xl text-base transition-colors"
           >
-            Book Demo
+            Start Free Trial
           </a>
           <a
-            href="mailto:contact@oscfinder.com"
-            className="inline-flex items-center justify-center gap-2 bg-[#006285] hover:bg-[#004a66] text-white font-semibold px-8 py-4 rounded-xl text-base transition-colors"
-          >
-            Get Access
-          </a>
-          <a
-            href="mailto:contact@oscfinder.com"
+            href="#demo"
             className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-4 rounded-xl text-base border border-white/20 transition-colors"
           >
-            Talk to Sales
+            Watch Demo
           </a>
         </div>
 

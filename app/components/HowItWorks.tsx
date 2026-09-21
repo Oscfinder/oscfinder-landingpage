@@ -45,11 +45,11 @@ const STEPS = [
     glow: "rgba(0,168,107,0.25)",
     icon: <IconMailFast size={26} color="#fff" />,
     title: "Contact and convert instantly",
-    desc: "Send personalised bulk email campaigns directly from the platform. Track opens, clicks, and replies in real time.",
+    desc: "Send personalised bulk email campaigns or reach out directly on WhatsApp — the fastest way to start a conversation with Nigerian businesses. Track opens, clicks, and replies in real time.",
     bullets: [
       "Bulk email with templates",
+      "1-click WhatsApp outreach",
       "Open & click tracking",
-      "Follow-up sequences",
     ],
     tag: { icon: <IconChartBar size={13} />, label: "Real-time open & click tracking" },
   },

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { LOGIN_URL, SIGNUP_URL } from "../constants";
 
 export default function Footer() {
   return (
@@ -20,7 +21,7 @@ export default function Footer() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 text-sm">
+          <div className="grid grid-cols-2 sm:grid-cols-5 gap-8 text-sm">
             <div>
               <p className="text-white/60 font-semibold mb-3">Product</p>
               <ul className="space-y-2">
@@ -28,6 +29,13 @@ export default function Footer() {
                 <li><Link href="/pricing" className="text-white/40 hover:text-white/70 transition-colors">Pricing</Link></li>
                 <li><Link href="/faq" className="text-white/40 hover:text-white/70 transition-colors">FAQ</Link></li>
                 <li><a href="/#demo" className="text-white/40 hover:text-white/70 transition-colors">Demo</a></li>
+              </ul>
+            </div>
+            <div>
+              <p className="text-white/60 font-semibold mb-3">Account</p>
+              <ul className="space-y-2">
+                <li><a href={SIGNUP_URL} className="text-white/40 hover:text-white/70 transition-colors">Sign Up</a></li>
+                <li><a href={LOGIN_URL} className="text-white/40 hover:text-white/70 transition-colors">Login</a></li>
               </ul>
             </div>
             <div>
@@ -41,7 +49,7 @@ export default function Footer() {
             <div>
               <p className="text-white/60 font-semibold mb-3">Contact</p>
               <ul className="space-y-2">
-                <li><a href="mailto:contact@oscfinder.com" className="text-white/40 hover:text-white/70 transition-colors">Get in touch</a></li>
+                <li><a href="mailto:support@oscfinder.com" className="text-white/40 hover:text-white/70 transition-colors">Get in touch</a></li>
                 <li><a href="#contact-form" className="text-white/40 hover:text-white/70 transition-colors">Book a demo</a></li>
               </ul>
             </div>

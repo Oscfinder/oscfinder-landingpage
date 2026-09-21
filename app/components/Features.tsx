@@ -13,6 +13,7 @@ import {
   IconCircleCheck,
   IconSparkles,
   IconPlayerPlay,
+  IconBrandWhatsapp,
 } from "@tabler/icons-react";
 
 const FEATURES = [
@@ -33,12 +34,20 @@ const FEATURES = [
     num: "02",
   },
   {
+    icon: <IconBrandWhatsapp size={20} />,
+    title: "Connect via WhatsApp",
+    desc: "Reach leads directly on WhatsApp with pre-built message templates. One click from any lead's phone number opens a WhatsApp conversation — the fastest way to connect with Nigerian businesses.",
+    outcome: "1-click WhatsApp outreach",
+    gradient: "from-[#25D366] to-[#128C7E]",
+    num: "03",
+  },
+  {
     icon: <IconFilter size={20} />,
     title: "Lead Filtering System",
     desc: "Filter leads by location, industry, company size, and contact status.",
     outcome: "Zero wasted outreach",
     gradient: "from-[#6366f1] to-[#8B5CF6]",
-    num: "03",
+    num: "04",
   },
   {
     icon: <IconBolt size={20} />,
@@ -46,7 +55,7 @@ const FEATURES = [
     desc: "Send personalized email campaigns to verified leads directly from the platform.",
     outcome: "5× faster pipeline",
     gradient: "from-[#F97316] to-[#EF4444]",
-    num: "04",
+    num: "05",
   },
   {
     icon: <IconFileExport size={20} />,
@@ -54,7 +63,7 @@ const FEATURES = [
     desc: "Download your entire lead list as Excel files ready for your CRM or team.",
     outcome: "CRM-ready in seconds",
     gradient: "from-[#006285] to-[#004a66]",
-    num: "05",
+    num: "06",
   },
   {
     icon: <IconChartBar size={20} />,
@@ -62,7 +71,7 @@ const FEATURES = [
     desc: "Monitor leads generated, emails sent, and conversion rates in real time.",
     outcome: "Live performance data",
     gradient: "from-[#0099CC] to-[#006285]",
-    num: "06",
+    num: "07",
   },
   {
     icon: <IconMailFast size={20} />,
@@ -70,7 +79,7 @@ const FEATURES = [
     desc: "Send hundreds of personalized outreach emails to verified leads in one click.",
     outcome: "1-click mass outreach",
     gradient: "from-[#00A86B] to-[#006285]",
-    num: "07",
+    num: "08",
   },
   {
     icon: <IconFileText size={20} />,
@@ -78,12 +87,12 @@ const FEATURES = [
     desc: "Build and save reusable outreach templates for different industries.",
     outcome: "Write once, use forever",
     gradient: "from-[#8B5CF6] to-[#F97316]",
-    num: "08",
+    num: "09",
   },
 ];
 
 const STRIP_STATS = [
-  { n: "8",  label: "Core features" },
+  { n: "9",  label: "Core features" },
   { n: "1",  label: "Platform"      },
   { n: "∞",  label: "Leads found"   },
 ];

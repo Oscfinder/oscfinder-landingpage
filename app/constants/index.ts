@@ -1,11 +1,16 @@
 // ── Company identity ──────────────────────────────────────────────────────────
 export const BRAND_NAME      = "OsCFinder";
 export const COMPANY_NAME    = "OsCompanyFinder Technologies";
-export const COMPANY_EMAIL   = "contact@oscfinder.com";
+export const COMPANY_EMAIL   = "support@oscfinder.com";
 export const COMPANY_PHONE   = "+2348139304329";
 export const COMPANY_PHONE_DISPLAY = "+234 813 930 4329";
 export const COMPANY_WHATSAPP = "https://wa.me/2348139304329";
 export const BASE_URI = process.env.NEXT_PUBLIC_BASE_URI;
+
+// ── App links ─────────────────────────────────────────────────────────────────
+export const APP_BASE_URI = "https://app.oscfinder.com";
+export const SIGNUP_URL   = `${APP_BASE_URI}/signup`;
+export const LOGIN_URL    = `${APP_BASE_URI}/login`;
 
 // ── Navigation ────────────────────────────────────────────────────────────────
 export interface NavLinkProps {
@@ -20,7 +25,6 @@ export const navLinks: NavLinkProps[] = [
   { label: "Demo",        href: "/#demo"          },
   { label: "Pricing",     href: "/pricing"        },
   { label: "FAQ",         href: "/faq"            },
-  { label: "Free Trial",  href: "/#contact-form", highlight: true },
 ];
 
 // ── Footer columns ────────────────────────────────────────────────────────────

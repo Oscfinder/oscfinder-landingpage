@@ -5,7 +5,9 @@ import {
   IconMailFast,
   IconFileExport,
   IconArrowRight,
+  IconRocket,
 } from "@tabler/icons-react";
+import { SIGNUP_URL } from "../constants";
 
 const STEPS = [
   { icon: <IconSearch size={15} />,            label: "Search Companies"  },
@@ -69,14 +71,20 @@ export default function DemoVideo() {
             </div>
 
             {/* Bottom bar */}
-            <div className="relative border-t border-white/10 px-6 py-3 flex items-center justify-between bg-[#0A1628]">
-              <p className="text-white/50 text-xs">Free · No commitment · 30 minutes</p>
+            <div className="relative border-t border-white/10 px-6 py-3 flex flex-col sm:flex-row items-center justify-between gap-2 bg-[#0A1628]">
               <a
                 href="#contact-form"
-                className="inline-flex items-center gap-1.5 text-[#00C48C] hover:text-[#00A86B] font-semibold text-xs transition-colors"
+                className="inline-flex items-center gap-1.5 text-white/60 hover:text-white font-semibold text-xs transition-colors"
               >
                 Schedule your demo
                 <IconArrowRight size={13} />
+              </a>
+              <a
+                href={SIGNUP_URL}
+                className="inline-flex items-center gap-1.5 text-[#00C48C] hover:text-[#00A86B] font-semibold text-xs transition-colors"
+              >
+                <IconRocket size={13} />
+                Or start your free trial now
               </a>
             </div>
           </div>

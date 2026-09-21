@@ -171,7 +171,7 @@ export default function Testimonials() {
         {/* Bottom trust bar */}
         <div className="mt-14 flex items-center justify-center py-7 px-8 rounded-2xl bg-gradient-to-r from-[#f0faff] to-[#edfaf5] border border-[#006285]/10">
           <p className="text-[#1A3A5C] text-sm font-semibold text-center">
-            Currently in private beta with select companies across Nigeria
+            Trusted by 50+ Nigerian businesses
           </p>
         </div>
 

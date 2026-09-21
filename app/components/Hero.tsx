@@ -6,6 +6,7 @@ import {
   IconBuilding,
   IconChevronRight,
 } from "@tabler/icons-react";
+import { SIGNUP_URL } from "../constants";
 
 const COMPANIES = [
   { name: "Acme Industries", meta: "Lagos · Manufacturing · 500+ employees", color: "#006285" },
@@ -53,7 +54,7 @@ export default function Hero() {
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-3 mb-10">
               <a
-                href="#contact-form"
+                href={SIGNUP_URL}
                 className="inline-flex items-center justify-center gap-2 bg-[#00C48C] hover:bg-[#00A86B] text-white font-bold px-7 py-3.5 rounded-lg text-sm transition-colors"
               >
                 <IconRocket size={15} />

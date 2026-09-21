@@ -6,6 +6,7 @@ import FeatureStrip from "../components/FeatureStrip";
 import ProductScreenshots from "../components/ProductScreenshots";
 import DemoVideo from "../components/DemoVideo";
 import { constructMetadata } from "../constants/seoContants";
+import { SIGNUP_URL } from "../constants";
 
 export const metadata = constructMetadata("features");
 
@@ -27,12 +28,12 @@ export default function FeaturesPage() {
               sales team one platform to find, contact, and convert Nigerian businesses.
             </p>
             <div className="flex flex-wrap gap-3">
-              <Link
-                href="/#contact-form"
+              <a
+                href={SIGNUP_URL}
                 className="inline-flex items-center gap-2 bg-[#00C48C] hover:bg-[#00A86B] text-white font-semibold px-6 py-3 rounded-xl text-sm transition-colors"
               >
-                Get a Demo
-              </Link>
+                Start Free Trial
+              </a>
               <Link
                 href="/pricing"
                 className="inline-flex items-center gap-2 border border-white/30 text-white/80 hover:text-white hover:border-white/60 font-semibold px-6 py-3 rounded-xl text-sm transition-colors"
@@ -62,15 +63,23 @@ export default function FeaturesPage() {
               Ready to see it in action?
             </h2>
             <p className="text-[#888888] mb-6">
-              We set up your account within 48 hours. Book a live demo and we&apos;ll
+              Start your free 14-day trial in minutes, or book a live demo and we&apos;ll
               walk you through the platform with real data for your industry.
             </p>
-            <Link
-              href="/#contact-form"
-              className="inline-flex items-center gap-2 bg-[#006285] hover:bg-[#004a66] text-white font-bold px-7 py-3.5 rounded-xl text-sm transition-colors"
-            >
-              Book a Demo
-            </Link>
+            <div className="flex flex-wrap gap-3 justify-center">
+              <a
+                href={SIGNUP_URL}
+                className="inline-flex items-center gap-2 bg-[#006285] hover:bg-[#004a66] text-white font-bold px-7 py-3.5 rounded-xl text-sm transition-colors"
+              >
+                Start Free Trial
+              </a>
+              <Link
+                href="/#contact-form"
+                className="inline-flex items-center gap-2 border-2 border-[#006285] text-[#006285] font-semibold px-6 py-3 rounded-xl text-sm hover:bg-[#006285] hover:text-white transition-all"
+              >
+                Book a Demo
+              </Link>
+            </div>
           </div>
         </section>
 

@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { IconMail, IconPhone, IconBuilding, IconUser, IconMessageDots, IconCircleCheck, IconSend } from "@tabler/icons-react";
+import { IconMail, IconPhone, IconBuilding, IconUser, IconMessageDots, IconCircleCheck, IconSend, IconRocket } from "@tabler/icons-react";
+import { SIGNUP_URL } from "../constants";
 
 const INTERESTS = [
   "Start a Free Trial",
@@ -99,6 +100,14 @@ export default function ContactForm() {
               no hard sell — just a straight conversation about your pipeline.
             </p>
 
+            <a
+              href={SIGNUP_URL}
+              className="mt-6 inline-flex items-center justify-center gap-2 bg-[#00C48C] hover:bg-[#00A86B] text-white font-bold px-6 py-3 rounded-xl text-sm transition-colors"
+            >
+              <IconRocket size={15} />
+              Or start your free trial now
+            </a>
+
             <div className="mt-8 space-y-5">
               {[
                 {
@@ -128,11 +137,11 @@ export default function ContactForm() {
             <div className="mt-10 p-5 bg-gradient-to-br from-[#006285] to-[#004a66] rounded-xl">
               <p className="text-white/60 text-xs uppercase tracking-widest mb-3">Direct contact</p>
               <a
-                href="mailto:contact@oscfinder.com"
+                href="mailto:support@oscfinder.com"
                 className="flex items-center gap-2 text-white/80 hover:text-white text-sm mb-2 transition-colors"
               >
                 <IconMail size={15} />
-                contact@oscfinder.com
+                support@oscfinder.com
               </a>
               <a
                 href="tel:+2348139304329"

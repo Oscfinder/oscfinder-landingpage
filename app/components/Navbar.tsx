@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { navLinks } from "../constants";
+import { navLinks, LOGIN_URL, SIGNUP_URL } from "../constants";
 
 export default function Navbar() {
   const [open, setOpen]       = useState(false);
@@ -68,16 +68,16 @@ export default function Navbar() {
           {/* Desktop CTAs */}
           <div className="hidden md:flex items-center gap-3">
             <a
-              href="/#demo"
-              className="text-sm font-semibold text-[#006285] border-2 border-[#006285] px-5 py-2 rounded-xl hover:bg-[#006285] hover:text-white transition-all duration-200"
+              href={LOGIN_URL}
+              className="text-sm font-semibold text-[#1A3A5C] hover:text-[#006285] px-3 py-2 transition-colors duration-200"
             >
-              Watch Demo
+              Login
             </a>
             <a
-              href="#pricing"
+              href={SIGNUP_URL}
               className="text-sm font-semibold text-white bg-[#00C48C] px-5 py-2 rounded-xl hover:bg-[#00A86B] transition-colors duration-200 shadow-sm hover:shadow-md"
             >
-              Book a Strategy Call
+              Start Free Trial
             </a>
           </div>
 
@@ -141,18 +141,18 @@ export default function Navbar() {
 
           <div className="pt-3 border-t border-[#E5E7EB] mt-2 flex flex-col gap-2.5">
             <a
-              href="/#demo"
+              href={LOGIN_URL}
               onClick={close}
               className="block text-center text-sm font-semibold text-[#006285] border-2 border-[#006285] px-4 py-2.5 rounded-xl hover:bg-[#006285] hover:text-white transition-all duration-200"
             >
-              Watch Demo
+              Login
             </a>
             <a
-              href="#pricing"
+              href={SIGNUP_URL}
               onClick={close}
               className="block text-center text-sm font-semibold text-white bg-[#00C48C] px-4 py-2.5 rounded-xl hover:bg-[#00A86B] transition-colors duration-200"
             >
-              Book a Strategy Call
+              Start Free Trial
             </a>
           </div>
         </div>
