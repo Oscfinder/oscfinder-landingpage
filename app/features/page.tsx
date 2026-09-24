@@ -63,7 +63,7 @@ export default function FeaturesPage() {
               Ready to see it in action?
             </h2>
             <p className="text-[#888888] mb-6">
-              Start your free 14-day trial in minutes, or book a live demo and we&apos;ll
+              Start your free 7-day trial in minutes, or book a live demo and we&apos;ll
               walk you through the platform with real data for your industry.
             </p>
             <div className="flex flex-wrap gap-3 justify-center">

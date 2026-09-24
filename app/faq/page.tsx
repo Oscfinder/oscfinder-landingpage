@@ -62,7 +62,7 @@ const CATEGORIES = [
       },
       {
         q: "How many users can access one account?",
-        a: "User seat limits depend on your subscription plan. Starter plans include access for one user, Business plans include up to five seats, and Enterprise plans support unlimited users. Reach out for details on multi-seat pricing.",
+        a: "User seat limits depend on your subscription plan. Starter plans include access for one user, Business plans include up to three seats, and Enterprise plans support up to ten users. Reach out for details on multi-seat pricing.",
       },
     ],
   },

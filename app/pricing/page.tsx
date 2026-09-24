@@ -2,6 +2,7 @@ import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Pricing from "../components/Pricing";
+import PricingTables from "../components/PricingTables";
 import ROI from "../components/ROI";
 import { constructMetadata } from "../constants/seoContants";
 import { SIGNUP_URL } from "../constants";
@@ -31,6 +32,9 @@ export default function PricingPage() {
         {/* Pricing cards */}
         <Pricing />
 
+        {/* Full plan comparison + pricing schedule */}
+        <PricingTables />
+
         {/* ROI section */}
         <ROI />
 
@@ -41,7 +45,7 @@ export default function PricingPage() {
               Questions about pricing?
             </h2>
             <p className="text-[#888888] mb-6 leading-relaxed">
-              Every paid plan starts with a free 14-day trial, no credit card required.
+              Every plan starts with a free 7-day trial, no credit card required.
               Still have questions? Check the FAQ or reach out directly.
             </p>
             <div className="flex flex-wrap gap-3 justify-center">
