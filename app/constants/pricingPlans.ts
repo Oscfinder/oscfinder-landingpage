@@ -11,6 +11,23 @@ export const TERMS: { key: TermKey; label: string; suffix: string; months: numbe
 
 export const PLANS = [
   {
+    key: "free",
+    name: "Free",
+    tagline: "Get started — no credit card needed",
+    features: [
+      "5 scrapes/month",
+      "10 emails/month",
+      "2 exports/month",
+      "20 leads storage",
+      "1 user",
+      "WhatsApp outreach",
+      "7-day trial",
+    ],
+    price: { "1": 0, "3": 0, "6": 0, "12": 0 } as Record<TermKey, number>,
+    cta: { label: "Start Free Trial", href: SIGNUP_URL },
+    highlight: false,
+  },
+  {
     key: "starter",
     name: "Starter",
     tagline: "Solo founders starting outreach",
@@ -22,6 +39,7 @@ export const PLANS = [
       "1 user",
       "10 email templates",
       "Basic email designs",
+      "WhatsApp outreach",
       "Email support",
       "Self-serve onboarding",
     ],
@@ -42,6 +60,7 @@ export const PLANS = [
       "3 users",
       "Unlimited email templates",
       "All 7 email designs",
+      "WhatsApp outreach",
       "Priority email support",
       "30-min setup call",
     ],
@@ -61,6 +80,7 @@ export const PLANS = [
       "10 users",
       "Unlimited email templates",
       "All 7 + custom email designs",
+      "WhatsApp outreach",
       "Dedicated account manager",
       "Full onboarding session",
     ],
@@ -73,6 +93,7 @@ export const PLANS = [
 export function savingsPct(plan: (typeof PLANS)[number], term: (typeof TERMS)[number]) {
   if (term.months === 1) return null;
   const equivMonthly = plan.price["1"] * term.months;
+  if (equivMonthly === 0) return null;
   const actual = plan.price[term.key];
   const pct = Math.round((1 - actual / equivMonthly) * 100);
   return pct > 0 ? pct : null;

@@ -40,7 +40,7 @@ export default function Pricing() {
             Business prospecting & outreach plans
           </h2>
           <p className="mt-4 text-[#888888] text-lg">
-            Plans are tailored to your expected usage. Choose 1, 3, 6, or 12-month billing.
+            Start free, then choose 1, 3, 6, or 12-month billing as you grow.
           </p>
         </div>
 
@@ -64,9 +64,10 @@ export default function Pricing() {
         </div>
 
         {/* Cards */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto items-stretch">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto items-stretch">
           {PLANS.map((plan) => {
             const amount = plan.price[termKey];
+            const isFree = amount === 0;
             const save = savingsPct(plan, term);
 
             return (
@@ -97,11 +98,13 @@ export default function Pricing() {
                   <div className="mb-6">
                     <div className="flex items-end gap-1.5 flex-wrap">
                       <span className={`text-3xl font-bold ${plan.highlight ? "text-white" : "text-[#0A1628]"}`}>
-                        {formatAmountToCurrency(amount)}
+                        {isFree ? "Free" : formatAmountToCurrency(amount)}
                       </span>
-                      <span className={`text-sm mb-1 ${plan.highlight ? "text-white/50" : "text-[#888888]"}`}>
-                        {term.suffix}
-                      </span>
+                      {!isFree && (
+                        <span className={`text-sm mb-1 ${plan.highlight ? "text-white/50" : "text-[#888888]"}`}>
+                          {term.suffix}
+                        </span>
+                      )}
                     </div>
                     {save && (
                       <span className="inline-block mt-1.5 text-[11px] font-bold text-[#00A86B] bg-[#e6f7f1] px-2 py-0.5 rounded-full">
